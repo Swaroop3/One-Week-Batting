@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/Profile.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<title>My Website</title>
+    <link rel="icon" type="image/x-icon" href="./photos/icon.png">
+	<link rel="stylesheet" type="text/css" href="style4.css">
+	<style>	
+	.content {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+		font-family: Georgia, serif;
+		font-size: 18px;
+		color: #333;
+		line-height: 1.5;
+		text-align: justify;
+	}
+	
+	.content h1 {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 36px;
+		text-align: center;
+		color: #333;
+		margin-bottom: 30px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+	
+	.content img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+		border-radius: 50%;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	
+	.hello {
+		margin-top: 10px;
+		list-style: none;
+		padding: 0;
+		text-align: center;
+		font-family: Arial, sans-serif;
+		font-size: 18px;
+		color: #333;
+		line-height: 1.5;
+		text-align: justify;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #f5f5f5;
+		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		width:60%;
+	}
+	
+	.hello li {
+		padding: 10px;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	.hello li:last-child {
+		border-bottom: none;
+	}
+	
+	footer {
+		background-color: #333;
+		color: #fff;
+		padding: 20px;
+		text-align: center;
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+	}
+</style>
+</head>
+<body>
+	<header>
+        <div class="logo">
+            <script>
+                for(let v=0;v<5;v++)
+                document.write("&NonBreakingSpace;");
+            </script>
+            Fit-Up
+        </div>
+        <div id="searc">
+            <input type="text" size="50" placeholder="Search Here" id="search-input">
+            <button onclick="searchFunction()" id="search-btn">
+              <img src="./photos/Searchicon.png" alt="Search" width="30" height="30">
+            </button>
+        </div>       
+        <nav>
+			<ul>
+				<li><a href="Homescreen.html"><img src="./photos/Homeicon.png"></a></li>
+				<li><a href="Profile.html"><img src="./photos/Profileicon.png"></a></li>
+				<li><a href="Songs.html"><img src="./photos/Songicon.png"></a></li>
+			</ul>
+		</nav>
+    </header>
+<section class="content">
+    	<h1 id="Person">Profile</h1>
+    <main>
+		<center>
+			
+			<img src="./photos/man.jpeg" alt="Profile Picture">
+			<ul class="hello">
+				<li><strong>Name:</strong> John Doe</li>
+				<li><strong>Age:</strong> 30</li>
+				<li><strong>Email:</strong> john.doe@example.com</li>
+				<li><strong>Phone:</strong> (555) 555-5555</li>
+				<li><strong>Address:</strong> 26/C,Hosur Rd,E-City Phase I,Bengaluru</li>
+				<li><strong>Height:</strong>180cm</li>
+				<li><strong>Weight:</strong>70kg</li>
+			</ul>
+			
+		</center>
+		</main>
+</section>
+<footer>
+	<p>© 2023 Fit-Up. All rights reserved.</p>
+</footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

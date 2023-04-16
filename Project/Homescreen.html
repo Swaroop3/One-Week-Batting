@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>My Website</title>
+    <link rel="icon" type="image/x-icon" href="photos/icon.png">
+	<link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <script>
+                for(let v=0;v<5;v++)
+                document.write("&NonBreakingSpace;");
+            </script>
+            Fit-Up
+        </div>
+        <div id="searc">
+            <input type="text" size="50" placeholder="Search Here" id="search-input">
+            <button onclick="searchFunction()" id="search-btn">
+              <img src="./photos/Searchicon.png" alt="Search" width="30" height="30">
+            </button>
+        </div>       
+        <nav>
+			<ul>
+				<li><a href="Homescreen.html"><img src="./photos/Homeicon.png"></a></li>
+				<li><a href="Profile.html"><img src="./photos/Profileicon.png"></a></li>
+				<li><a href="Songs.html"><img src="./photos/Songicon.png"></a></li>
+			</ul>
+		</nav>
+    </header>
+    <section class="banner">
+		<h1>Welcome to Fit-Up</h1>
+		<p>"Sweat now, sparkle later - workout daily and shine bright like a diamond!"</p>
+	</section>
+	<script>
+        for(let i = 4;i--;){
+          document.write("<br>");
+        }
+      </script>
+	<section class="content no-link-style">
+		<button class="box" style="background-color: aquamarine;" onclick="window.location.href='./setworkout.html'">
+			<h3>Workout Plan</h3>
+		</button> 
+		<button class="box" style="background-color: cornflowerblue;" onclick="window.location.href='./settargets.html'">
+			<h3>Set Targets</h3>
+		</button>
+		<button class="box" style="background-color: firebrick;" onclick="window.location.href='./setdietplan.html'">
+			<h3>Set Diet Plan</h3>
+		</button>
+	</section>	
+	<script>
+        for(let i = 4;i--;){
+          document.write("<br>");
+        }
+      </script>
+    <footer>
+		<p>&copy; 2023 Fit-up. All rights reserved.</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    background-image: url("./photos/body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+form {
+    border: 8px solid black;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 60px;
+    width: 400px;
+    opacity: 70%;
+    animation: slide-in 1s ease-out;
+}
+  
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 60px;
+    box-sizing: border-box;
+}
+  
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid black;
+    border-radius: 60px;
+    cursor: pointer;
+}
+  
+/* Animation to slide the form in from the right */
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+  
+/* Animation to slide the form out to the left */
+@keyframes slide-out {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+    /* Add this to delay the form's removal from the page */
+}
+  
+/* Add the slide-out animation to the form with class "submitted" */
+form.submitted {
+    animation: slide-out 1s ease-out;
+    animation-fill-mode: forwards;
+}
+

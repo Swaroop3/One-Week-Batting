@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<title>My Website</title>
+    <link rel="icon" type="image/x-icon" href="photos/icon.png">
+	<link rel="stylesheet" href = "style4.css">
+	
+	<style>
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .now-playing {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .album-art {
+        margin-right: 20px;
+    }
+
+    .song-info {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    .playlist {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #888;
+        padding: 20px;
+        width: 800px;
+		height: 600px;
+	}
+
+    .playlist h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .playlist ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .playlist li {
+        margin-bottom: 10px;
+    }
+
+    .playlist li a {
+        color: #333;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .playlist li a:hover {
+        color: #666;
+    }
+
+    .player-controls button {
+        background-color: transparent;
+        border: none;
+        margin-right: 10px;
+        padding: 0;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .player-controls button:hover {
+        transform: scale(1.2);
+    }
+
+	ul{
+		font-size: large;
+	}
+</style>
+</head>
+
+<body>	
+	
+    <header>
+        <div class="logo">
+            <script>
+                for(let v=0;v<5;v++)
+                document.write("&NonBreakingSpace;");
+            </script>
+            Fit-Up
+        </div>
+        <div id="searc">
+            <input type="text" size="50" placeholder="Search Here" id="search-input">
+            <button onclick="searchFunction()" id="search-btn">
+              <img src="./photos/Searchicon.png" alt="Search" width="30" height="30">
+            </button>
+        </div>       
+        <nav>
+			<ul>
+				<li><a href="Homescreen.html"><img src="./photos/Homeicon.png"></a></li>
+				<li><a href="Profile.html"><img src="./photos/Profileicon.png"></a></li>
+				<li><a href="Songs.html"><img src="./photos/Songicon.png"></a></li>
+			</ul>
+		</nav>
+    </header>
+	
+    <section class="content">
+		<div class="playlist">
+			<h1>My Playlist</h1>
+			<ul>				
+				<li><strong>Bandook Meri Laila</strong><br><audio controls><source src="./songs/BML.mp3"></audio></li>
+				<br>
+				<li><strong>Jhoome Jo Pathaan</strong><br><audio controls><source src="./songs/Pathaan.mp3"></audio></li>
+				<br>
+				<li><strong>Tere Pyaar Mein</strong><br><audio controls><source src="./songs/TPM.mp3"></audio></li>
+				<br>
+				<li><strong>Challa</strong><br><audio controls><source src="./songs/Challa.mp3"></audio></li>
+				<br>
+				<li><strong>Manike</strong><br><audio controls><source src="./songs/Manike.mp3"></audio></li>
+			</ul>
+		</div>
+	</section>
+       <footer>
+		<p>&copy; 2023 My Social Media. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>My Website</title>
+    <link rel="icon" type="image/x-icon" href="photos/icon.png">
+	<link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <script>
+                for(let v=0;v<5;v++)
+                document.write("&NonBreakingSpace;");
+            </script>
+            Fit-Up
+        </div>
+        <div id="searc">
+            <input type="text" size="50" placeholder="Search Here" id="search-input">
+            <button onclick="searchFunction()" id="search-btn">
+              <img src="./photos/Searchicon.png" alt="Search" width="30" height="30">
+            </button>
+        </div>       
+        <nav>
+			<ul>
+				<li><a href="Homescreen.html"><img src="./photos/Homeicon.png"></a></li>
+				<li><a href="Profile.html"><img src="./photos/Profileicon.png"></a></li>
+				<li><a href="Songs.html"><img src="./photos/Songicon.png"></a></li>
+			</ul>
+		</nav>
+    </header>
+    <script>
+        for(let i = 6;i--;){
+          document.write("<br>");
+        }
+      </script>
+      <center style="font-size: xx-large; font-family: 'Courier New', Courier, monospace;">Choose the Muscle you want to work on.</center>
+      <script>
+        for(let i = 4;i--;){
+          document.write("<br>");
+        }
+      </script>
+	<section class="content no-link-style">
+        <button class="box" style="background-color: grey;" onclick="location.href='Bicep.html';">
+            <h3>Biceps</h3>
+            <p></p>
+        </button> 
+        <button class="box" style="background-color: grey;" onclick="location.href='Tricep.html';">
+            <h3>Tricep</h3>
+            <p></p>
+        </button>
+        <button class="box" style="background-color: grey;" onclick="location.href='Shoulders.html';">
+            <h3>Shoulders</h3>
+            <p></p>
+        </button>
+        <button class="box" style="background-color: grey;" onclick="location.href='Chest.html';">
+            <h3>Chest</h3>
+            <p></p>
+        </button>
+        <button class="box" style="background-color: grey;" onclick="location.href='Back.html';">
+            <h3>Back</h3>
+            <p></p>
+        </button>
+        <button class="box" style="background-color: grey;" onclick="location.href='Abs.html';">
+            <h3>Abs</h3>
+            <p></p>
+        </button>
+        <button class="box" style="background-color: grey;" onclick="location.href='Legs.html';">
+            <h3>Legs</h3>
+            <p></p>
+        </button>
+    </section>    
+    <script>
+        for(let i = 10;i--;){
+          document.write("<br>");
+        }
+      </script>
+    <footer>
+		<p>&copy; 2023 Fit-up. All rights reserved.</p>
+	</footer>
+</body>
+</html>

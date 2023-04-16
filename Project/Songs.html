@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<title>My Website</title>
+    <link rel="icon" type="image/x-icon" href="photos/icon.png">
+	<link rel="stylesheet" href = "style4.css">
+</head>
+
+<body>	
+	
+    <header>
+        <div class="logo">
+            <script>
+                for(let v=0;v<5;v++)
+                document.write("&NonBreakingSpace;");
+            </script>
+            Fit-Up
+        </div>
+        <div id="searc">
+            <input type="text" size="50" placeholder="Search Here" id="search-input">
+            <button onclick="searchFunction()" id="search-btn">
+              <img src="./photos/Searchicon.png" alt="Search" width="30" height="30">
+            </button>
+        </div>       
+        <nav>
+			<ul>
+				<li><a href="Homescreen.html"><img src="./photos/Homeicon.png"></a></li>
+				<li><a href="Profile.html"><img src="./photos/Profileicon.png"></a></li>
+				<li><a href="Songs.html"><img src="./photos/Songicon.png"></a></li>
+			</ul>
+		</nav>
+    </header>
+	
+    <section class="content">
+		<div class="playlist">
+      <script>
+        for(let i = 4;i--;){
+          document.write("<br>");
+        }
+      </script>
+			<center><h1 style = "font-size: xx-large;">Languages</h1></center>
+      <script>
+        for(let i = 4;i--;){
+          document.write("<br>");
+        }
+      </script>
+			<section class="content no-link-style">
+        <a href="Telugu.html">
+          <button class="box" style="background-color: orange;">
+            <h3>Telugu</h3>
+          </button>
+        </a>
+        <a href="Kannada.html">
+          <button class="box" style="background-color: firebrick;">
+            <h3>Kannada</h3>
+          </button>
+        </a>
+        <a href="Hindi.html">
+          <button class="box" style="background-color: blue;">
+            <h3>Hindi</h3>
+          </button>
+        </a>
+        <a href="Tamil.html">
+          <button class="box" style="background-color: yellow;">
+            <h3>Tamil</h3>
+          </button>
+        </a>
+        <a href="English.html">
+          <button class="box" style="background-color: grey;">
+            <h3>English</h3>
+          </button>
+        </a>
+      </section>
+      
+            <script>
+        for(let i = 4;i--;){
+          document.write("<br>");
+        }
+      </script>
+		</div>
+	</section>
+       <footer>
+		<p>&copy; 2023 My Social Media. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>
